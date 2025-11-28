@@ -1,6 +1,10 @@
 ---
-title: Welcome to Quartz
+Темы итогого сочинения
 ---
 
-This is a blank Quartz installation.
-See the [documentation](https://quartz.jzhao.xyz) for how to get started.
+# Добро пожаловать
+
+Здесь вы можете:
+- смотреть карту заметок (Graph View справа),
+- кликать по папкам и заметкам слева,
+- искать по ключевым словам через Search.
