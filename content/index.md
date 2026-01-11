@@ -1,11 +1,11 @@
 ---
-title: Темы итогового сочинения
+title: Welcome to Quartz
 ---
 
-# Темы итогового сочинения
+This is a blank Quartz installation.
+See the [documentation](https://quartz.jzhao.xyz) for how to get started.
 
-Это главная страница.  
-Здесь можно:
-- открыть папки слева в Explorer,
-- посмотреть связи в Graph View справа,
-- пользоваться поиском сверху.
+<video controls width="420">
+  <source src="/Outlook.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
