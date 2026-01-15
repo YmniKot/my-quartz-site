@@ -87,6 +87,7 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
     showTags,
     focusOnHover,
     enableRadial,
+    colorByTags,
   } = JSON.parse(graph.dataset["cfg"]!) as D3Config
 
   const data: Map<SimpleSlug, ContentDetails> = new Map(
@@ -198,7 +199,14 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
     const isCurrent = d.id === slug
     if (isCurrent) {
       return computedStyleMap["--secondary"]
-    } else if (visited.has(d.id) || d.id.startsWith("tags/")) {
+    } else if (colorByTags && d.tags.length > 0) {
+      for (const tag of d.tags) {
+        if (colorByTags[tag]) {
+          return colorByTags[tag]
+        }
+      }
+    }
+    if (visited.has(d.id) || d.id.startsWith("tags/")) {
       return computedStyleMap["--tertiary"]
     } else {
       return computedStyleMap["--gray"]

@@ -41,7 +41,20 @@ export const defaultContentPageLayout: PageLayout = {
     Component.Explorer(),
   ],
   right: [
-    Component.Graph(),
+    Component.Graph({
+      localGraph: {
+        colorByTags: {
+          "Книги": "#e74c3c",
+          "Темы": "#3498db",
+        },
+      },
+      globalGraph: {
+        colorByTags: {
+          "Книги": "#e74c3c",
+          "Темы": "#3498db",
+        },
+      },
+    }),
     Component.DesktopOnly(Component.TableOfContents()),
     Component.Backlinks(),
   ],
