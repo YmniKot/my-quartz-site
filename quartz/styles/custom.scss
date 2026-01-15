@@ -1,20 +1,29 @@
 @use "./base.scss";
 
-/* ===== TAG COLORS (URL-encoded Cyrillic) ===== */
+/* ===== TAG COLORS (FINAL) ===== */
 
+/* #Книги */
 a.internal.tag-link[href="/tags/%D0%9A%D0%BD%D0%B8%D0%B3%D0%B8"] {
-  background: #2563eb;
-  color: #fff;
+  background-color: #2563eb; /* blue */
+  color: #ffffff;
 }
 
+/* #Темы */
 a.internal.tag-link[href="/tags/%D0%A2%D0%B5%D0%BC%D1%8B"] {
-  background: #16a34a;
+  background-color: #16a34a; /* green */
   color: #052e16;
 }
 
-/* общий стиль (опционально) */
+/* общий стиль для всех тегов */
 a.internal.tag-link {
   border-radius: 8px;
   padding: 0.15rem 0.45rem;
   font-weight: 500;
+  line-height: 1.4;
 }
+
+/* hover */
+a.internal.tag-link:hover {
+  filter: brightness(1.08);
+}
+
